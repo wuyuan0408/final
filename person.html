@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+	<meta charset="UTF-8">
+	<title>個人資料修改</title>
+	<link rel="stylesheet" type="text/css" href="assets/CSS/main.css">
+	<link rel="stylesheet" type="text/css" href="assets/CSS/person.css">
+	<script src="assets/js/main.js"></script> <!--基本js-->
+    <script src="assets/js/jquery-3.4.0.min.js"></script> <!--載入jquery-->
+</head>
+<body>
+	<a id="top"></a>
+	<a href="index.html"><img src="assets/img/headimg.jpg" style="width: 100%;" ></a>
+	<div class="nav" id="menu"> <!--選單的部分-->
+	    <nav>
+	    	<br>
+	        <ul>
+	    	    <li><a  style="text-decoration:none;" href="product.html">產品列表</a></li>
+	    	    <li><a  style="text-decoration:none;" href="ranking.html">熱門排行</a></li>
+	    	    <li><a  style="text-decoration:none;" href="board.html">聯絡我們</a></li>
+	    	    <li><a  style="text-decoration:none;" href="group.html">組員介紹</a></li>
+	    	    <li><a  style="text-decoration:none;" href="">會員中心</a>
+	    	    	<ul> 
+	    	    		<li><a  style="text-decoration:none;" href="person.html">基本資料</a></li>
+	    	    		<li><a  style="text-decoration:none;" href="re_consume.html">消費紀錄</a></li>
+	    	    		<li><a  style="text-decoration:none;" href="re_comment.html">評論紀錄</a></li>
+	    	    	</ul> 
+	    	    </li>
+	    	    <li><a  style="text-decoration:none;" href="login.html"><button>登入</button></a></li>
+	    	    <li><a  style="text-decoration:none;" href="signup.html"><button>註冊</button></a></li>
+	    	    <li><a  style="text-decoration:none;" href="car.html">
+	    	    	<img src="assets/img/car01.png" onmouseover="this.src='assets/img/car02.png';" onmouseout="this.src='assets/img/car01.png';" 
+	    	    	     style="height: 70px;"></a>
+	    	    </li>
+	        </ul>
+	    </nav>
+    </div>  <!--選單的部分為止-->
+    <div style="clear:both;"></div><!--這是用來清除上方的浮動效果-->
+    <div>
+		<div class="header">
+			<p>個人資料修改</p>
+		</div>
+		<div class="form-body"> 
+			<form action="form_action.asp" method="post">   <!--後端注意-->
+				<div class="form-group">
+					<label for="">會員帳號：</label>
+					<input type="text" name="username" class="form-input" required>
+					<span class="small_prompt">請輸入帳號  例如：後端注意!!!</span>
+				</div>
+				<div class="form-group">
+					<label for="">會員密碼：</label>
+					<input type="password" class="form-input" required>
+					<span class="small_prompt">請輸入密碼  例如：後端注意!!!</span>
+				</div>
+				<div class="form-group">
+					<label for="">會員名字：</label>
+					<input type="text" class="form-input" required>
+					<span class="small_prompt">請輸入名字  例如：後端注意!!!</span>
+				</div>
+				<div class="form-group">
+					<label for="">會員電話：</label>
+					<input type="text" class="form-input" required>
+					<span class="small_prompt">請輸入國際碼+電話號碼  例如：+88631234567</span>
+				</div>
+				<div class="form-group">
+					<label for="">會員地址：</label>
+					<input type="text" class="form-input" required>
+					<span class="small_prompt">請輸入郵遞區號+地址  例如：雲林縣西螺鎮振興里2號</span>
+				</div>
+				<div class="form-group">
+					<label for="">會員信箱：</label>
+					<input type="text" class="form-input" required>
+					<span class="small_prompt">請輸入信箱位置  例如：ex@gmail.com</span>
+				</div>
+				<div class="form-group">
+					<label for="">會員生日：</label>
+					<input type="text" class="form-input" required>
+					<span class="small_prompt">請輸入西元年月日  例如：20000101</span>
+				</div>
+				<div class="btn">
+					<button type="submit" class="form-btn form-btn-warning" >資料修改</button>
+					<button type="reset" class="form-btn form-btn-primary" >重置</button>
+			</div>
+			</form>
+			
+		</div>
+		<div class="footer">
+			<p>溫馨提醒：字體已加大，方便瀏覽</p>
+		</div>
+	</div>
+	<div id="gotop" class="gotop">
+        <a href="#top"  onclick="gogogo('top')"><img src="assets/img/gotop.png" style="height: 80px;"></a>
+    </div>
+	<br><br><br>
+    <div id="footer_end"> 
+    	<br>
+    	<a>版權所有，請勿抄襲!!!!</a><br>
+    	<a>前端：10744125 吳學沅 、10744124 徐世寰</a><br>
+    	<a>後端：10744224 呂雪薇 、10744231 陳柏勳</a><br>
+    	<a>建議使用 chrome瀏覽器瀏覽!!</a>
+    </div>
+</body>
+</html>

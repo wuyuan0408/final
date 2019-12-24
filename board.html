@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+	<meta charset="UTF-8">
+	<title>聯絡我們</title>
+	<link rel="stylesheet" type="text/css" href="assets/CSS/main.css">
+	<link rel="stylesheet" type="text/css" href="assets/CSS/board.css">
+	<script src="assets/js/main.js"></script> <!--基本js-->
+    <script src="assets/js/jquery-3.4.0.min.js"></script> <!--載入jquery-->
+</head>
+<body>
+	<a id="top"></a>
+	<a href="index.html"><img src="assets/img/headimg.jpg" style="width: 100%;" ></a>
+	<div class="nav" id="menu"> <!--選單的部分-->
+	    <nav>
+	    	<br>
+	        <ul>
+	    	    <li><a  style="text-decoration:none;" href="product.html">產品列表</a></li>
+	    	    <li><a  style="text-decoration:none;" href="ranking.html">熱門排行</a></li>
+	    	    <li><a  style="text-decoration:none;" href="board.html">聯絡我們</a></li>
+	    	    <li><a  style="text-decoration:none;" href="group.html">組員介紹</a></li>
+	    	    <li><a  style="text-decoration:none;" href="">會員中心</a>
+	    	    	<ul> 
+	    	    		<li><a  style="text-decoration:none;" href="person.html">基本資料</a></li>
+	    	    		<li><a  style="text-decoration:none;" href="re_consume.html">消費紀錄</a></li>
+	    	    		<li><a  style="text-decoration:none;" href="re_comment.html">評論紀錄</a></li>
+	    	    	</ul> 
+	    	    </li>
+	    	    <li><a  style="text-decoration:none;" href="login.html"><button>登入</button></a></li>
+	    	    <li><a  style="text-decoration:none;" href="signup.html"><button>註冊</button></a></li>
+	    	    <li><a  style="text-decoration:none;" href="car.html">
+	    	    	<img src="assets/img/car01.png" onmouseover="this.src='assets/img/car02.png';" onmouseout="this.src='assets/img/car01.png';" 
+	    	    	     style="height: 70px;"></a>
+	    	    </li>
+	        </ul>
+	    </nav>
+    </div>  <!--選單的部分為止-->
+    <div style="clear:both;"></div><!--這是用來清除上方的浮動效果-->
+    <div class="boardall">
+			<div class="boardcontent">
+				<h1 class="con-line">聯絡我們</h1>
+				<div>
+					<form action="form_action.asp" method="post">
+						姓名:&nbsp;<input type="text" style="width: 500px;height:50px;" required><br><br>
+						email:&nbsp;<input type="email" style="width: 500px;height:50px;" required><br><br>
+						想說的話:<br><textarea cols="70" rows="8" required></textarea><br>
+						<input type="submit" value="送出" class="gogo" />
+					</form>
+				</div>
+				<br>
+				<h1 class="con-line">留言內容</h1>
+				<div class="message">
+					<!--放留言內容-->
+					<form action=""> <!--後端注意-->
+						<div>
+						<table>
+							<thead>
+								<tr>
+									<th width="120px"><font style="vertical-align: inherit;">姓名</font></th>
+									<th><font style="vertical-align: inherit;">e-mail</font></th>
+									<th><font style="vertical-align: inherit;">想說的話</font></th>
+								</tr>
+							</thead>
+		                	<tbody>
+		                    	<tr>
+		                    		<td><!--姓名--><font style="vertical-align: inherit;">陳靖仇</font></td>
+		                    		<td><!--e-mail--><font style="vertical-align: inherit;">example@gmail.com</font></td>
+		                    		<td><!--想說的話--><font style="vertical-align: inherit;">有機會進middle香港作家的書嗎?</font></td>
+		                    	</tr>
+		                	</tbody>
+		            	</table>	
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	<div id="gotop" class="gotop">
+        <a href="#top"  onclick="gogogo('top')"><img src="assets/img/gotop.png" style="height: 80px;"></a>
+    </div>
+	<br><br><br>
+    <div id="footer_end"> 
+    	<br>
+    	<a>版權所有，請勿抄襲!!!!</a><br>
+    	<a>前端：10744125 吳學沅 、10744124 徐世寰</a><br>
+    	<a>後端：10744224 呂雪薇 、10744231 陳柏勳</a><br>
+    	<a>建議使用 chrome瀏覽器瀏覽!!</a>
+    </div>
+</body>
+</html>

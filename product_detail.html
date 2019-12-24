@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+	<meta charset="UTF-8">
+	<title>產品詳細內容</title>
+	<link rel="stylesheet" type="text/css" href="assets/CSS/main.css">
+	<link rel="stylesheet" type="text/css" href="assets/CSS/product.css">
+	<link rel="stylesheet" type="text/css" href="assets/CSS/star.css">
+	<link rel="stylesheet" type="text/css" href="assets/CSS/detail.css">
+	<script type="text/javascript" src="assets/js/main.js"></script>
+    <script src="assets/js/jquery-3.4.0.min.js"></script> <!--載入jquery-->
+</head>
+<body>
+	<a id="top"></a>
+	<a href="index.html"><img src="assets/img/headimg.jpg" style="width: 100%;" ></a>
+	<div class="nav" id="menu"> <!--選單的部分-->
+	    <nav>
+	    	<br>
+	        <ul>
+	    	    <li><a  style="text-decoration:none;" href="product.html">產品列表</a></li>
+	    	    <li><a  style="text-decoration:none;" href="ranking.html">熱門排行</a></li>
+	    	    <li><a  style="text-decoration:none;" href="board.html">聯絡我們</a></li>
+	    	    <li><a  style="text-decoration:none;" href="group.html">組員介紹</a></li>
+	    	    <li><a  style="text-decoration:none;" href="">會員中心</a>
+	    	    	<ul> 
+	    	    		<li><a  style="text-decoration:none;" href="person.html">基本資料</a></li>
+	    	    		<li><a  style="text-decoration:none;" href="re_consume.html">消費紀錄</a></li>
+	    	    		<li><a  style="text-decoration:none;" href="re_comment.html">評論紀錄</a></li>
+	    	    	</ul> 
+	    	    </li>
+	    	    <li><a  style="text-decoration:none;" href="login.html"><button>登入</button></a></li>
+	    	    <li><a  style="text-decoration:none;" href="signup.html"><button>註冊</button></a></li>
+	    	    <li><a  style="text-decoration:none;" href="car.html">
+	    	    	<img src="assets/img/car01.png" onmouseover="this.src='assets/img/car02.png';" onmouseout="this.src='assets/img/car01.png';" 
+	    	    	     style="height: 70px;"></a>
+	    	    </li>
+	        </ul>
+	    </nav>
+    </div>  <!--選單的部分為止-->
+    <div style="clear:both;"></div><!--這是用來清除上方的浮動效果-->
+    <div class="detail_all">
+    	<div class="detail_imgcard"> 
+    		<img src="assets/img/product/002.jpg" >
+    	</div>
+    	<div class="detail_text">
+    		<h2>書名：新譯千家詩(二版)</h2>
+    		<p>流水號：00000002</p>
+    		<p>系列名：文學類</p>
+    		<p>ISBN13：9789571441603</p> 
+    		<p>出版社：三民書局</p> 
+    		<p>作者：邱燮友;劉正浩注譯</p> 
+    		<p>裝訂：平裝</p> 
+    		<p>頁數：624頁</p> 
+    		<p>刷次：4</p> 
+    		<p>最新刷日期：2016/11/1</p> 
+    		<p>價格：280元</p> 
+    		<button type="submit" class="form-btn form-btn-warning" >加入購物車</button>&nbsp;&nbsp;&nbsp;&nbsp;<a>庫存：10</a>
+    		<br><br>
+    		<from action="form_action.asp" method="post">  <!--後端注意 星 與 論-->
+    			<div class="ratings">
+					<input type="radio" id="star5" name="ratings" value="5" hidden="">
+					<label for="star5"></label>
+					<input type="radio" id="star4" name="ratings" value="4" hidden="">
+					<label for="star4"></label>
+					<input type="radio" id="star3" name="ratings" value="3" hidden="">
+					<label for="star3"></label>
+					<input type="radio" id="star2" name="ratings" value="2" hidden="">
+					<label for="star2"></label>
+					<input type="radio" id="star1" name="ratings" value="1" hidden="">
+					<label for="star1"></label>
+				</div>
+				<br>
+				<textarea style="max-width:800px;max-height:100px;width:800px;height:100px;resize: none;">寫下您的完美評論吧!!</textarea>
+				<input type="submit" value="送出完美的評論!!">
+			</from>
+    	</div>
+    	<div style="clear:both;"></div><!--這是用來清除上方的浮動效果-->
+    </div>
+    <div style="clear:both;"></div><!--這是用來清除上方的浮動效果-->
+    <br><br>
+    <form action=""> <!--後端注意-->
+				<div>
+					<table>
+						<thead>
+							<tr>
+								<th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">日期</font></font></th>
+								<th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">商品名稱</font></font></th>
+								<th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">星數</font></font></th>
+								<th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">評語</font></font></th>
+							</tr>
+						</thead>
+		                <tbody>
+		                    <tr>
+		                    	<td><!--日期--><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">108/1/1 03:27</font></font></td>
+		                    	<td><!--商品名稱--><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">新譯千家詩(二版)</font></font></td>
+		                    	<td><!--星數--><script>readstar(4)</script></td>
+		                    	<td><!--評語--><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">666不能在666了</font></font></td>
+		                    </tr>
+		                </tbody>
+		            </table>	
+				</div>
+			</form>
+    <div style="clear:both;"></div><!--這是用來清除上方的浮動效果-->
+    <div id="gotop" class="gotop">
+        <a href="#top"  onclick="gogogo('top')"><img src="assets/img/gotop.png" style="height: 80px;"></a>
+    </div>
+    <br><br><br>
+    <div id="footer_end"> 
+    	<br>
+    	<a>版權所有，請勿抄襲!!!!</a><br>
+    	<a>前端：10744125 吳學沅 、10744124 徐世寰</a><br>
+    	<a>後端：10744224 呂雪薇 、10744231 陳柏勳</a><br>
+    	<a>建議使用 chrome瀏覽器瀏覽!!</a>
+    </div>
+</body>
+</html>
