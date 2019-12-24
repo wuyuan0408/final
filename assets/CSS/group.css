@@ -1,0 +1,50 @@
+        .group_showa {
+                   display: block;
+                   width: 1100px;
+                   height: 430px;
+                   padding: 8px;
+                   border: 5px #0000FF double; /*深藍*/
+                   margin: 10px 10px;
+                   font-size: 26px;
+        } 
+        .group_showb {
+                   display: block;
+                   width: 1100px;
+                   height: 430px;
+                   padding: 8px;
+                   border: 5px #FF0000 double;  /*紅*/
+                   margin: 10px 10px;
+                   font-size: 26px;
+        }
+        .group_showc {
+                   display: block;
+                   width: 1100px;
+                   height: 430px;
+                   padding: 8px;
+                   border: 5px #00FF00 double; /*綠*/
+                   margin: 10px 10px;
+                   font-size: 26px;
+        }
+        .group_showd {
+                   display: block;
+                   width: 1100px;
+                   height: 430px;
+                   padding: 8px;
+                   border: 5px #FF00FF double; /*紫*/
+                   margin: 10px 10px;
+                   font-size: 26px;
+        }
+        .group_img{
+            display: block;
+            float: left;
+            width: 300px;
+            height: 400px;
+            padding: 10px;
+        }
+        .group_text{
+            display: block;
+            float: left;
+            width: 750px;
+            height: 400px;
+            padding: 10px;
+        }

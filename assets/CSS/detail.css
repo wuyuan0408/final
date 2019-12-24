@@ -1,0 +1,63 @@
+.detail_all{
+			width:1250px;
+			height:1100px;
+			padding:5px;
+			border:5px double black;
+			float:left;
+			margin:5px;
+		}
+		.detail_imgcard{
+			width:250px;
+			height:350px;
+			float:left;
+			padding:5px;
+			border:5px double green;
+			margin:5px;
+		}
+		.detail_imgcard img{
+			width:230px;
+			height:320px;"
+		}
+		.detail_text{
+			width:900px;
+			height:1050px;
+			padding:5px;
+			border:5px double black;
+			float:left;
+			margin:5px;
+			text-align:left;
+			font-size:24px;
+			font-family: "微軟正黑體";
+		}
+		.detail_text input{
+			height: 50px;
+    		width: 280px;
+    		color: #fff;
+    		border: 1px solid #eee;
+    		border-radius: 5px;
+    		box-shadow: 0px 2px 3px #ccc;
+    		font-size: 30px;
+    		margin-left: 15px;
+    		background-color: #0000FF;
+    		font-family: "微軟正黑體";
+		}
+		.detail_text input:hover{
+			background-color: #00FFFF;
+			color:black;
+		}
+		.btn{
+			margin-top: 30px;
+		}
+		.form-btn{
+			height: 50px;
+			width: 170px;
+			color:#fff;
+			border: 1px solid #eee;
+			border-radius: 5px;
+			box-shadow: 0px 2px 3px #ccc;
+			font-size: 30px;
+		}
+		.form-btn-warning{
+			margin-left: 15px;
+			background-color: #F0AD4E;
+		}

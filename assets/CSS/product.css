@@ -1,0 +1,91 @@
+/*網頁框架*/
+#produut_one{
+	display: inline-block;
+	width:1200px;
+	height:1450px;
+	border: 5px green double;
+	margin-left:50px;
+}
+
+#product_left{
+	display: block;
+	width:150px;
+	height:1200px;
+/*	border: 5px green double;*/
+	float:left;
+	font-size: 24px;
+    border-radius: 2px;
+    font-family: "微軟正黑體";
+    margin:0px;
+}
+
+#product_right{
+	display: block;
+	width:1000px;
+	height:1400px;
+/*	border: 5px green double;*/
+	float:left;
+}
+/*網頁框架截止*/
+
+/*左框架主結構*/
+#product_left ul{
+    list-style:none;
+    margin:0;
+	padding:0;
+	/* 內有浮動元件時，需設overflow才會自動調整大小 */
+	overflow:auto;
+
+    }
+#product_left ul li{
+    /* 利用float讓第一層li水平排列 */
+    float:left;
+    margin:10px 10px 10px 10px;
+    
+                 }
+#product_left ul li a {
+	line-height: 60px;
+	list-style:none;
+	padding:5px 20px;
+	background-color: #77DDFF;
+	border: 2px solid #FFE076;
+	border-radius:10px;
+	text-decoration:none;
+}
+
+#product_left ul li a:hover {
+	background:#FFFF00;
+}
+/*左框架主結構截止*/
+
+
+/*右框架  每張框架*/
+.product_card {
+	width:180px;
+	height:380px;
+	padding:10px;
+	border:5px dotted black;
+	float:left;
+	margin:15px;
+}
+.product_card img{
+	width:165px;
+	height:230px;
+}
+.product_card a{
+	padding:5px 20px;
+	background-color: #77DDFF;
+	border: 2px solid #FFE076;
+	border-radius:10px;
+	font-size:20px;
+	text-decoration:none;
+}
+.product_card a:hover {
+	background:#FFFF00;
+}
+.product_card_text{
+	text-align:center;
+	font-size:24px;
+	font-family: "微軟正黑體";
+}
+/*右框架  每張框架截止*/
