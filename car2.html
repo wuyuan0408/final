@@ -36,37 +36,32 @@
 	    </nav>
     </div>  <!--選單的部分為止-->
     <div style="clear:both;"></div><!--這是用來清除上方的浮動效果-->
+    <div class="line2">最後商品核對</div>
     <div class="cartall">
-			<form action="car2.html"> <!--後端注意-->
+			<form action=""> <!--後端注意-->
 				<div>
 					<table>
 						<thead>
 							<tr>
-								<th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">商品照片</font></font></th>
 								<th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">商品名稱</font></font></th>
 								<th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">單件價錢</font></font></th>
 								<th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">數量</font></font></th>
 								<th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">總共</font></font></th>
-								<th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">取消項目</font></font></th>
 							</tr>
 						</thead>
 		                <tbody>
 		                    <tr>
-		                    	<td><!--商品照片--><img src="assets/img/product/001.jpg" style="width:160px;"></td>
 		                    	<td><!--商品名稱--><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">新譯人間詞話(三版)</font></font></td>
 		                    	<td><!--單件價錢--><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">$ 280元</font></font></td>
 		                    	<td><!--數量--><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2件</font></font></td>
 		                    	<td><!--總額--><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">$ 560元</font></font></td>
-		                    	<td><!--取消項目--><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><input type="button" value="刪除" class="delete"></font></font></td>
 		                    </tr>
 		                </tbody>
 		            </table>	
 				</div>
-				<div class="line2">   <!--增加支付方式-->
-					<input type="radio"  style="width: 35px;height: 35px;" name="Shippihg_method" value="face"><font style="vertical-align: inherit;">面交&emsp;運費：0元</font><br>
-					<input type="radio"  style="width: 35px;height: 35px;" name="Shippihg_method" value="home" checked><font style="vertical-align: inherit;">宅配&emsp;運費：120元</font><br>
-					<font style="vertical-align: inherit;">請輸入地址(必填)</font><br>
-					<input type="text" name="address" class="form-input" required>
+				<div class="line2">   <!--運送方式-->
+					<font style="vertical-align: inherit;">運送方式：宅配(120元)</font><br>
+					<font style="vertical-align: inherit;">地址：雲林縣西螺鎮振興里2號</font><br>
 				</div>
 				<div class="line">
 					<div class="total"><font style="vertical-align: inherit;">
@@ -74,7 +69,7 @@
 					</font></div>
 
 					<div class="next">
-						<font style="vertical-align: inherit;"><input type="submit" value="下一步" class="nextcar" ></font>
+						<font style="vertical-align: inherit;"><input type="submit" value="確定送出" class="nextcar"></font>
 					</div>
 				</div>
 			</form>
