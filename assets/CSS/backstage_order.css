@@ -1,0 +1,15 @@
+table{
+	width:95%;
+	border:2px solid black;
+}
+tr{
+	text-align: center;
+}
+th{
+	background-color: #FFE076;
+	font-size: 20px;
+}
+td{
+	font-size: 20px;
+	text-align: center;
+}

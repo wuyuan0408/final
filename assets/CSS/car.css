@@ -1,4 +1,5 @@
 table{
+    margin-left:5%;
 	width:80%;
 	border:2px solid black;
 }
@@ -18,6 +19,11 @@ td{
 	display: flex;
     border-top: 2px solid #D4D2D2;
 }
+.line2{
+    margin-left:5%;
+    width:80%;
+    font-size:34px;
+}
 .next{
 	flex:3;
 	text-align:right;
@@ -29,6 +35,17 @@ td{
 	flex:9;
     margin-top: 20px;
 }
+.form-input{
+            height: 40px;
+            width: 300px;
+            padding-left: 8px;
+            background-color: #F0FFFF;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 28px;
+            width:800px;
+            resize: none;
+        }
 input.nextcar
 {
     width: 150px;
