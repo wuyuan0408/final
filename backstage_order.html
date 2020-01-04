@@ -7,6 +7,45 @@
     <link rel="stylesheet" type="text/css" href="assets/CSS/backstage_order.css">
     <script src="assets/js/main.js"></script> <!--基本js-->
     <script src="assets/js/jquery-3.4.0.min.js"></script> <!--載入jquery-->
+    <script>
+    	do{
+			var backstage_account = prompt("請輸入帳號", "admin");
+			if(backstage_account=="admin")
+				break;
+			alert("帳號輸入錯誤~~請重新輸入!!");
+    	}while(true);
+    	do{
+			var backstage_password = prompt("請輸入密碼", "12345678"); 
+			if(backstage_password=="12345678")
+				break;
+			alert("密碼輸入錯誤~~請重新輸入!!");
+    	}while(true);
+
+    	function print_backage_order (a,b,c,d,e,f,g,h,i){ //訂單的部分
+    		document.write('<tr>'); //行起
+    		document.write('<td><font style="vertical-align: inherit;">'+a+'</font></td>'); //訂單流水號
+    		document.write('<td><font style="vertical-align: inherit;">'+b+'</font></td>'); //日期
+    		document.write('<td><font style="vertical-align: inherit;">'+c+'</font></td>'); //購買會員編號
+    		document.write('<td><font style="vertical-align: inherit;">'+d+'</font></td>'); //商品名稱
+    		document.write('<td><font style="vertical-align: inherit;">'+e+'</font></td>'); //付款總價
+    		document.write('<td><font style="vertical-align: inherit;">'+f+'</font></td>'); //付款方式
+    		document.write('<td><font style="vertical-align: inherit;">'+g+'</font></td>'); //買家名稱
+    		document.write('<td><font style="vertical-align: inherit;">'+h+'</font></td>'); //買家電話
+    		document.write('<td><font style="vertical-align: inherit;">'+i+'</font></td>'); //地址
+    		document.write("</tr>"); //行落
+    	}
+    	function print_backage_account (ac,pd,na,ph,ad,em,birth){//帳號、密碼、名字、電話、地址、信箱、生日
+    		document.write('<tr>'); //行起
+    		document.write('<td><font style="vertical-align: inherit;">'+ac+'</font></td>'); //帳號
+    		document.write('<td><font style="vertical-align: inherit;">'+pd+'</font></td>'); //密碼
+    		document.write('<td><font style="vertical-align: inherit;">'+na+'</font></td>'); //名字
+    		document.write('<td><font style="vertical-align: inherit;">'+ph+'</font></td>'); //電話
+    		document.write('<td><font style="vertical-align: inherit;">'+ad+'</font></td>'); //地址
+    		document.write('<td><font style="vertical-align: inherit;">'+em+'</font></td>'); //信箱
+    		document.write('<td><font style="vertical-align: inherit;">'+birth+'</font></td>'); //生日
+    		document.write("</tr>"); //行落
+    	}
+    </script>
 </head>
 <body>
 	<a id="top"></a>
@@ -37,10 +76,11 @@
     </div>  <!--選單的部分為止-->
     <div style="clear:both;"></div><!--這是用來清除上方的浮動效果-->
     <!--<h1>後台&emsp;您無登入或是非後台帳戶</h1>-->
-    <h1>後台&emsp;訂單查詢</h1>
+    
     <div class="cartall">
 			<form action=""> <!--後端注意-->
 				<div>
+					<h1>後台&emsp;訂單查詢</h1>
 					<table>
 						<thead>
 							<tr>
@@ -56,30 +96,55 @@
 							</tr>
 						</thead>
 		                <tbody>
-		                    <tr>
-		                    	<td><!--訂單流水號--><font style="vertical-align: inherit;">36986549</font></td>
-		                    	<td><!--日期--><font style="vertical-align: inherit;">108/1/1 03:25</font></td>
-		                    	<td><!--購買會員編號--><font style="vertical-align: inherit;">h3k69m8a</font></td>
-		                    	<td><!--商品名稱--><font style="vertical-align: inherit;">新譯人間詞話(三版)</font></td>
-		                    	<td><!--付款總價--><font style="vertical-align: inherit;">$ 560元</font></td>
-		                    	<td><!--付款方式--><font style="vertical-align: inherit;">面交</font></td>
-		                    	<td><!--買家名稱--><font style="vertical-align: inherit;">炭志郎</font></td>
-		                    	<td><!--買家電話--><font style="vertical-align: inherit;">041234567</font></td>
-		                    	<td><!--地址--><font style="vertical-align: inherit;">雲林縣西螺鎮振興里2號</font></td>
-		                    </tr>
-		                    <tr>
-		                    	<td><!--訂單流水號--><font style="vertical-align: inherit;">36986549</font></td>
-		                    	<td><!--日期--><font style="vertical-align: inherit;">108/1/1 03:25</font></td>
-		                    	<td><!--購買會員編號--><font style="vertical-align: inherit;">h3k69m8a</font></td>
-		                    	<td><!--商品名稱--><font style="vertical-align: inherit;">新譯人間詞話(三版)</font></td>
-		                    	<td><!--付款總價--><font style="vertical-align: inherit;">$ 560元</font></td>
-		                    	<td><!--付款方式--><font style="vertical-align: inherit;">面交</font></td>
-		                    	<td><!--買家名稱--><font style="vertical-align: inherit;">炭志郎</font></td>
-		                    	<td><!--買家電話--><font style="vertical-align: inherit;">041234567</font></td>
-		                    	<td><!--地址--><font style="vertical-align: inherit;">雲林縣西螺鎮振興里2號</font></td>
-		                    </tr>
+		    <script>
+		        print_backage_order("36986549","108/1/1 03:25","h3k69m8a","新譯人間詞話(三版)","$ 560元","面交","炭","041234567","雲林縣西螺鎮振興里2號");
+		        print_backage_order("36986549","108/1/1 03:25","h3k69m8a","新譯人間詞話(三版)","$ 560元","面交","炭","041234567","雲林縣西螺鎮振興里2號");
+		        print_backage_order("36986549","108/1/1 03:25","h3k69m8a","新譯人間詞話(三版)","$ 560元","面交","炭","041234567","雲林縣西螺鎮振興里2號");
+		        print_backage_order("36986549","108/1/1 03:25","h3k69m8a","新譯人間詞話(三版)","$ 560元","面交","炭","041234567","雲林縣西螺鎮振興里2號");
+		        print_backage_order("36986549","108/1/1 03:25","h3k69m8a","新譯人間詞話(三版)","$ 560元","面交","炭","041234567","雲林縣西螺鎮振興里2號");
+		        print_backage_order("36986549","108/1/1 03:25","h3k69m8a","新譯人間詞話(三版)","$ 560元","面交","炭","041234567","雲林縣西螺鎮振興里2號");
+		        print_backage_order("36986549","108/1/1 03:25","h3k69m8a","新譯人間詞話(三版)","$ 560元","面交","炭","041234567","雲林縣西螺鎮振興里2號");
+		        print_backage_order("36986549","108/1/1 03:25","h3k69m8a","新譯人間詞話(三版)","$ 560元","面交","炭","041234567","雲林縣西螺鎮振興里2號");
+		        print_backage_order("36986549","108/1/1 03:25","h3k69m8a","新譯人間詞話(三版)","$ 560元","面交","炭","041234567","雲林縣西螺鎮振興里2號");
+		        print_backage_order("36986549","108/1/1 03:25","h3k69m8a","新譯人間詞話(三版)","$ 560元","面交","炭","041234567","雲林縣西螺鎮振興里2號");
+		        print_backage_order("36986549","108/1/1 03:25","h3k69m8a","新譯人間詞話(三版)","$ 560元","面交","炭","041234567","雲林縣西螺鎮振興里2號");
+		        print_backage_order("36986549","108/1/1 03:25","h3k69m8a","新譯人間詞話(三版)","$ 560元","面交","炭","041234567","雲林縣西螺鎮振興里2號");
+		        print_backage_order("36986549","108/1/1 03:25","h3k69m8a","新譯人間詞話(三版)","$ 560元","面交","炭","041234567","雲林縣西螺鎮振興里2號");
+		        print_backage_order("36986549","108/1/1 03:25","h3k69m8a","新譯人間詞話(三版)","$ 560元","面交","炭","041234567","雲林縣西螺鎮振興里2號");
+		        print_backage_order("36986549","108/1/1 03:25","h3k69m8a","新譯人間詞話(三版)","$ 560元","面交","炭","041234567","雲林縣西螺鎮振興里2號");
+		        print_backage_order("36986549","108/1/1 03:25","h3k69m8a","新譯人間詞話(三版)","$ 560元","面交","炭","041234567","雲林縣西螺鎮振興里2號");
+		        print_backage_order("36986549","108/1/1 03:25","h3k69m8a","新譯人間詞話(三版)","$ 560元","面交","炭","041234567","雲林縣西螺鎮振興里2號");
+		        //訂單流水號、日期、購買會員編號、商品名稱、付款總價、付款方式、買家名稱、買家電話、地址
+		    </script>
 		                </tbody>
-		            </table>	
+		            </table>
+		            <h1>後台&emsp;帳密資訊查詢</h1>
+		            <table>
+						<thead>
+							<tr>
+								<th><font style="vertical-align: inherit;">帳號</font></th>
+								<th><font style="vertical-align: inherit;">密碼</font></th>
+								<th><font style="vertical-align: inherit;">名字</font></th>
+								<th><font style="vertical-align: inherit;">電話</font></th>
+								<th><font style="vertical-align: inherit;">地址</font></th>
+								<th><font style="vertical-align: inherit;">信箱</font></th>
+								<th><font style="vertical-align: inherit;">生日</font></th>
+							</tr>
+						</thead>
+		                <tbody>
+		    <script>
+		        print_backage_account("admin","12345678","admin","0800-061-000","台北陰曹地府市府路2號","ex@gmail.com","1999/9/21");
+		        print_backage_account("admin","12345678","admin","0800-061-000","台北陰曹地府市府路2號","ex@gmail.com","1999/9/21");
+		        print_backage_account("admin","12345678","admin","0800-061-000","台北陰曹地府市府路2號","ex@gmail.com","1999/9/21");
+		        print_backage_account("admin","12345678","admin","0800-061-000","台北陰曹地府市府路2號","ex@gmail.com","1999/9/21");
+		        print_backage_account("admin","12345678","admin","0800-061-000","台北陰曹地府市府路2號","ex@gmail.com","1999/9/21");
+		        print_backage_account("admin","12345678","admin","0800-061-000","台北陰曹地府市府路2號","ex@gmail.com","1999/9/21");
+		        print_backage_account("admin","12345678","admin","0800-061-000","台北陰曹地府市府路2號","ex@gmail.com","1999/9/21");
+		        print_backage_account("admin","12345678","admin","0800-061-000","台北陰曹地府市府路2號","ex@gmail.com","1999/9/21");
+		        //帳號、密碼、名字、電話、地址、信箱、生日
+		    </script>
+		                </tbody>
+		            </table>
 				</div>
 			</form>
 		</div>
