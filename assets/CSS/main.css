@@ -127,15 +127,17 @@ body{
     font-family: "微軟正黑體";
     margin:0px;}
 .myDiv {  /*投影片*/
-                    width: 750px;
-                    height: 600px;
+                    width: 1300px;
+                    height: 500px;
                     margin: 20px auto;
-                    background-size: 750px,600px;
+                    background-size: 1300px,500px;
                     background-position: center;
-                    -webkit-animation-name: 'loop';
-                    -webkit-animation-duration: 10s;
+                    -webkit-animation-name: 'loopa';
+                    /*-webkit-transition: all 5s step-start;*/
+                    -webkit-animation-duration: 15s;
                     -webkit-animation-iteration-count: infinite;
                 }
+
                  @-webkit-keyframes "loop"{
                  0% {background: url(../img/ind_01.jpg) no-repeat;height: 600px;}
                  30% {background: url(../img/ind_02.jpg) no-repeat;height: 600px;}
@@ -143,7 +145,14 @@ body{
                  90% {background: url(../img/ind_04.jpg) no-repeat;height: 600px;}
                  100% {background: url(../img/ind_01.jpg) no-repeat;height: 600px;}
                }
-        /*最主要的CSS為止*/
+               @-webkit-keyframes "loopa"{
+                 0% {background: url(../img/inv_01.jpg) no-repeat;}
+                 25% {background: url(../img/inv_02.jpg) no-repeat;}
+                 50% {background: url(../img/inv_03.jpg) no-repeat;}
+                 75% {background: url(../img/inv_04.jpg) no-repeat;}
+                 100% {background: url(../img/inv_01.jpg) no-repeat;}
+               }
+        /*最主要的CSS為止*/ 
         .gotop {                              /*萬馬奔頂*/
                    position: fixed; 
                    right: 30px;
